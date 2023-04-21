@@ -5,7 +5,7 @@ import Logo from "../assets/logo.png"
 export const Header = () => {
   //DARK MODE TOGGLE
   const [darkMode, setDarkMode] = useState(
-    JSON.parse(localStorage.getItem("darkMode")) || false
+    JSON.parse(localStorage.getItem("darkMode")) || true
   )
   const navigate = useNavigate()
 
@@ -54,9 +54,13 @@ export const Header = () => {
       <nav className="bg-white border-b2 border-gray-200 dark:bg-gray-900 dark:border-b-1 dark:boredr-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center">
-            <img src={Logo} className="text-2xl h-8 mr-2" alt="Cinemate Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Cinemate
+            <img
+              src={Logo}
+              className="text-2xl h-12 mr-3 rounded-full"
+              alt="Cinemate Logo"
+            />
+            <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">
+              Goldie Flicks
             </span>
           </Link>
 
