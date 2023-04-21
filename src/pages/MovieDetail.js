@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
-import Backup from "../assets/images/backup.png"
 import { useTitle } from "../hooks/useTitle"
+import Backup from "../assets/images/backup.png"
 
 export const MovieDetail = () => {
   const params = useParams()
   const [movie, setMovie] = useState({})
 
-  useTitle(movie.title)
+  //eslint-disable-next-line
+  const pageTitle = useTitle(movie.title)
 
   const image = movie.poster_path
     ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
@@ -22,7 +23,7 @@ export const MovieDetail = () => {
       setMovie(json)
       console.log(json)
     }
-    fetchMovie(movie.title)
+    fetchMovie()
   }, [params.id])
 
   return (
