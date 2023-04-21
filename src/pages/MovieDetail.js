@@ -23,7 +23,7 @@ export const MovieDetail = () => {
       console.log(json)
     }
     fetchMovie(movie.title)
-  }, [])
+  }, [params.id])
 
   return (
     <main>
