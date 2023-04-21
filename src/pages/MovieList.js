@@ -8,7 +8,7 @@ export const MovieList = ({ apiPath, title }) => {
   //desctructioring api Path from allRoutes.js This is what gets sent to the parameter in useFetch.
 
   //This will send Title information to the useTitle hook parameter.
-  const pageTitle = useTitle(title)
+  useTitle(title)
 
   return (
     <main>
