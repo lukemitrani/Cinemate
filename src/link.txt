@@ -1,0 +1,33 @@
+Base URL:
+https://developers.themoviedb.org/3/search/search-companies
+
+On the website punch in your api key and test it in postman by dragging the generated URL next to the send request button. Testing doesn't work from there site. **Note is to take out the &language=en-US from the API. 
+Only with the search API you have to add a query at end.
+Example: query={movie_name}
+
+
+
+API key
+763050db9c753f2fc79d190c308ccbab
+
+Individual:
+https://api.themoviedb.org/3/movie/{movie_id}?api_key=763050db9c753f2fc79d190c308ccbab
+
+Now Playing:
+https://api.themoviedb.org/3/movie/now_playing?api_key=763050db9c753f2fc79d190c308ccbab
+
+
+Popular: 
+https://api.themoviedb.org/3/movie/popular?api_key=763050db9c753f2fc79d190c308ccbab
+
+
+Top Rated:
+https://api.themoviedb.org/3/movie/top_rated?api_key=763050db9c753f2fc79d190c308ccbab
+
+Upcoming: 
+https://api.themoviedb.org/3/movie/upcoming?api_key=763050db9c753f2fc79d190c308ccbab
+
+
+Search:
+https://api.themoviedb.org/3/search/company?api_key=763050db9c753f2fc79d190c308ccbab&query={movie_name}
+
