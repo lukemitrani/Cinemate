@@ -3,10 +3,13 @@ import Backup from "../assets/images/backup.png"
 
 export const Card = ({ movie }) => {
   const { id, original_title, overview, poster_path } = movie
+
+  //Getting an image. It has to come from a different URL than we use the poster path. The info on this is at movie.db getting started, images.
   const image = poster_path
     ? `https://image.tmdb.org/t/p/w500/${poster_path}`
     : Backup
   //If we get an image from the poster path. place it in poster path if not use our back up image.
+
 
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
