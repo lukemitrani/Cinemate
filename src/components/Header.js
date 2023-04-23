@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { NavLink, Link, useNavigate } from "react-router-dom"
-import Logo from "../assets/logo.png"
+import Logo from "../assets/logo512.png"
 
 export const Header = () => {
   //DARK MODE TOGGLE
@@ -59,8 +59,8 @@ export const Header = () => {
               className="text-2xl h-12 mr-3 rounded-full"
               alt="Cinemate Logo"
             />
-            <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">
-              Goldie Flicks
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              Cinemate
             </span>
           </Link>
 
